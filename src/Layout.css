@@ -1,0 +1,71 @@
+/* ============================= */
+/*         GENERAL STYLES        */
+/* ============================= */
+.container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    gap: 10px; /* Space between boxes */
+    background: #d3d3d3;
+    padding: 20px;
+    height: 100vh;
+}
+
+/* Box Styling */
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 8px;
+    width: 100%; /* Full width */
+    height: 100px; /* Fixed height */
+}
+
+/* Box Colors - Apply for Both Desktop and Mobile */
+.box1 {
+    background: #ff7f7f;
+}
+
+.box2 {
+    background: #b2ff66;
+}
+
+.box3 {
+    background: #ff99ff;
+}
+
+.box4a {
+    background: #9999ff;
+}
+
+.box4b {
+    background: #6666ff;
+}
+
+/* ============================= */
+/*        DESKTOP LAYOUT         */
+/* ============================= */
+@media (min-width: 769px) {
+    .container {
+        flex-direction: column; /* Ensure stacking */
+        align-items: center;
+    }
+}
+
+/* ============================= */
+/*     MOBILE RESPONSIVENESS     */
+/* ============================= */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 90%; /* Make it smaller for better spacing */
+        margin: 5px 0; /* Add spacing between boxes */
+    }
+}
